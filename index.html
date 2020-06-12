@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet The Cat!</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon.png" sizes="32x32" type="image/png">
+
+</head>
+
+<body>
+    <div class="title">
+        <h1>PET THE CAT</h1>
+        <h5 id="counter">You have pet the cat 0 times! :(</h5>
+        <progress id="happiness" value="100" min="0" max="100"></progress>
+        <h5 style="letter-spacing: 3vh;">HAPPINESS</h5>
+    </div>
+    <img src="img/cat.png" onclick="pet();">
+
+    <div class="timer">
+        <h5>Time alive:</h5>
+        <label id="minutes">00</label>:<label id="seconds">00</label>
+    </div>
+
+    <div id="overlay">
+        <div class="content">
+            <p>You lost!</p>
+            <p id="score"></p> 
+            <button onclick="reload();">RETRY</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
